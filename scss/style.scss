@@ -1,0 +1,59 @@
+/*Variables*/
+$darkBlue: hsl(233, 47%, 7%);
+$desaturatedBlue: hsl(244, 38%, 16%);
+$softViolet:  hsl(277, 64%, 61%);
+$whiteStatsHeadings: hsla(0, 0%, 100%, 0.6);
+$transparentWhiteParagraph: hsla(0, 0%, 100%, 0.75);
+
+// font-family: 'Inter', sans-serif;
+// font-family: 'Lexend Deca', sans-serif;
+
+/*Reset*/
+*,*::before,*::after{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 0 24px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+body{
+    background:$darkBlue;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: $transparentWhiteParagraph;  
+}
+
+h1, .stats{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.card{
+    background: $desaturatedBlue;
+    max-width: 1440px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image{
+
+    height: 50vh;
+    // width: 100%;
+    background-image: url(../images/image-header-mobile.jpg);
+    background-size: cover;
+    background-color:$softViolet;
+    background-blend-mode: multiply;
+}
+
+
+/*Attribution*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import 'info';
